@@ -11,9 +11,9 @@ A interface EstadoPedido define os métodos que cada estado do pedido deve imple
 
 ~~~php
 interface EstadoPedido {
-public function processarPagamento(Pedido $pedido);
-public function enviarConfirmacao(Pedido $pedido);
-public function cancelarPedido(Pedido $pedido);
+    public function processarPagamento(Pedido $pedido);
+    public function enviarConfirmacao(Pedido $pedido);
+    public function cancelarPedido(Pedido $pedido);
 }
 ~~~
 
@@ -26,7 +26,7 @@ A classe Pedido representa um pedido em si e mantém uma referência para o esta
 
 ~~~php
 class Pedido {
-private $estado;
+    private $estado;
 
     // Métodos para definir e obter o estado, além de métodos para realizar ações no pedido.
 }
